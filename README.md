@@ -58,7 +58,7 @@ echo $faker->lastName(); //宮沢
 
 Faker Japanese is released under the MIT License. See the bundled LICENSE file for details.
 
-[LICENSE](https://github.com/xyyolab/faker-japanese/LICENSE)
+[LICENSE](https://github.com/xyyolab/faker-japanese/blob/master/LICENSE)
 
 ## Reporting an issue or a feature request
 
