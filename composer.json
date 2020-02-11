@@ -1,0 +1,34 @@
+{
+	"name": "xyyolab/faker-japanese",
+	"description": "Faker Japanese is a Faker provider that generates fake Japanese related data for you.",
+	"keywords": [
+		"faker",
+		"random",
+		"japanese"
+	],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "XING YAHAO",
+			"email": "xyyolab@gmail.com"
+		}
+	],
+	"require": {
+		"php": "^5.6 || ^7.0",
+		"fzaninotto/faker": "^1.7"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "^5.7"
+	},
+	"autoload": {
+		"psr-4": {
+			"Faker\\Provider\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Faker\\Tests\\Provider\\": "tests/Faker"
+		}
+	},
+	"minimum-stability": "stable"
+}
