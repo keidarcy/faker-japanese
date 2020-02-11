@@ -1,22 +1,8 @@
-# faker-japanese
 
-English | [日本語](./README.ja_JP.md) | [简体中文](./README.zh-CN.md)
+<?php
+// When installed via composer
+require_once 'vendor/autoload.php';
 
-[![Build Status](https://travis-ci.com/xyyolab/faker-japanese.svg?branch=master)](https://travis-ci.com/xyyolab/faker-japanese)
-
-Japanese related data generate using fzaninotto/Faker
-
-## Installation
-
-To install, use composer:
-
-```bash
-composer require xyyo/faker-japanese
-```
-
-## Usage
-
-```php
 $faker = Faker\Factory::create('ja_JP');
 $faker->addProvider(new Faker\Provider\Japanese($faker));
 
@@ -56,15 +42,3 @@ echo $faker->name(); //斉藤 拓真
 echo $faker->firstName(); //里佳
 // genertate random fake lastName
 echo $faker->lastName(); //宮沢
-```
-
-## License
-
-Faker Japanese is released under the MIT License. See the bundled LICENSE file for details.
-
-[LICENSE](https://github.com/xyyolab/faker-japanese/blob/master/LICENSE)
-
-## Reporting an issue or a feature request
-
-Fork it, send a PR. Issues and feature requests are tracked in the
-[GitHub issue tracker](https://github.com/xyyolab/faker-japanese/issues).
