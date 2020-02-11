@@ -1,4 +1,5 @@
 # faker-japanese
+[![Build Status](https://travis-ci.com/xyyolab/faker-japanese.svg?branch=master)](https://travis-ci.com/xyyolab/faker-japanese)
 
 Japanese related data generate using fzaninotto/Faker
 
