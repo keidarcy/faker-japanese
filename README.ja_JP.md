@@ -78,7 +78,8 @@ var_dump($faker->realText); // このぼんやりと白い銀河ぎんがを大�
 
 ## to do
 
-- [ ] 元のパッケージに PR を出す.
+- [ ] 元のパッケージに PR を出す。
+- [ ] Laravel の使い方の例を出す。
 
 ## License
 

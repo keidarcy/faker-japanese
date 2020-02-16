@@ -78,6 +78,7 @@ var_dump($faker->realText); // このぼんやりと白い銀河ぎんがを大�
 ## to do
 
 - [ ] send pr to orginal package.
+- [ ] add Laravel usage.
 
 ## License
 
