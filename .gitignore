@@ -4,3 +4,4 @@ vendor/
 clover.xml
 phpunit.xml
 composer.lock
+test.php

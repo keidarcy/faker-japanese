@@ -36,11 +36,6 @@ class JapaneseTest extends TestCase
         $this->assertNotEmpty($this->faker->idiom);
     }
 
-    public function testPhone()
-    {
-        $this->assertNotEmpty($this->faker->phone);
-    }
-
     public function testPokemon()
     {
         $this->assertNotEmpty($this->faker->pokemon);
@@ -48,7 +43,7 @@ class JapaneseTest extends TestCase
 
     public function testBank()
     {
-        $this->assertNotEmpty($this->faker->Bank);
+        $this->assertNotEmpty($this->faker->bank);
     }
 
     public function testColor()
@@ -61,29 +56,24 @@ class JapaneseTest extends TestCase
         $this->assertNotEmpty($this->faker->company);
     }
 
-    public function testAddress()
+    public function testUrl()
     {
-        $this->assertNotEmpty($this->faker->address);
+        $this->assertNotEmpty($this->faker->url);
     }
 
-    public function testPostcode()
+    public function testEmail()
     {
-        $this->assertNotEmpty($this->faker->postcode);
+        $this->assertNotEmpty($this->faker->email);
     }
 
-    public function testPrefecture()
+    public function testUserFirstName()
     {
-        $this->assertNotEmpty($this->faker->prefecture);
+        $this->assertNotEmpty($this->faker->userFirstName);
     }
 
-    public function testCountry()
+    public function testUserLastName()
     {
-        $this->assertNotEmpty($this->faker->country);
-    }
-
-    public function testRealText()
-    {
-        $this->assertNotEmpty($this->faker->RealText);
+        $this->assertNotEmpty($this->faker->userLastName);
     }
 
     public function testUserName()
@@ -91,14 +81,64 @@ class JapaneseTest extends TestCase
         $this->assertNotEmpty($this->faker->userName);
     }
 
+    public function testPostcode()
+    {
+        $this->assertNotEmpty($this->faker->postcode);
+    }
+
+    public function testCountry()
+    {
+        $this->assertNotEmpty($this->faker->country);
+    }
+
+    public function testPrefecture()
+    {
+        $this->assertNotEmpty($this->faker->prefecture);
+    }
+
+    public function testWard()
+    {
+        $this->assertNotEmpty($this->faker->ward);
+    }
+
+    public function testCity()
+    {
+        $this->assertNotEmpty($this->faker->city);
+    }
+
+    public function testStreetAddress()
+    {
+        $this->assertNotEmpty($this->faker->streetAddress);
+    }
+
+    public function testSecondaryAddress()
+    {
+        $this->assertNotEmpty($this->faker->secondaryAddress);
+    }
+
+    public function testAddress()
+    {
+        $this->assertNotEmpty($this->faker->address);
+    }
+
+    public function testAddressWithCode()
+    {
+        $this->assertNotEmpty($this->faker->addressWithCode);
+    }
+
+    public function testPhone()
+    {
+        $this->assertNotEmpty($this->faker->phone);
+    }
+
     public function testDomainName()
     {
         $this->assertNotEmpty($this->faker->domainName);
     }
 
-    public function testName()
+    public function testLastName()
     {
-        $this->assertNotEmpty($this->faker->name);
+        $this->assertNotEmpty($this->faker->lastName);
     }
 
     public function testFirstName()
@@ -106,8 +146,28 @@ class JapaneseTest extends TestCase
         $this->assertNotEmpty($this->faker->firstName);
     }
 
-    public function testLastName()
+    public function testName()
     {
-        $this->assertNotEmpty($this->faker->lastName);
+        $this->assertNotEmpty($this->faker->name);
+    }
+
+    public function testLastKanaName()
+    {
+        $this->assertNotEmpty($this->faker->lastKanaName);
+    }
+
+    public function testFirstKanaName()
+    {
+        $this->assertNotEmpty($this->faker->firstKanaName);
+    }
+
+    public function testKanaName()
+    {
+        $this->assertNotEmpty($this->faker->kanaName);
+    }
+
+    public function testRealText()
+    {
+        $this->assertNotEmpty($this->faker->realText);
     }
 }
