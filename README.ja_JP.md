@@ -87,6 +87,6 @@ var_dump($faker->realText); // このぼんやりと白い銀河ぎんがを大�
 
 ## Reporting an issue or a feature request
 
-もし他に追加して欲しいリストがあれば、以下に出してください。
+もし他のランダムジェネレータ追加して欲しい場合は、以下に出してください。
 
 [GitHub issue tracker](https://github.com/xyyolab/faker-japanese/issues).
