@@ -4,72 +4,6 @@ namespace Faker\Provider;
 
 class JapaneseData
 {
-    // text
-    public static function getWord()
-    {
-        return static::$words;
-    }
-
-    public static function getIdiom()
-    {
-        return static::$idioms;
-    }
-
-    public static function getKanji()
-    {
-        return static::$kanjis;
-    }
-
-    // pokemon
-    public static function getPokemon()
-    {
-        return static::$pokemons;
-    }
-
-    // phone number
-    public static function getPhoneNumber()
-    {
-        return static::$phoneNumbers;
-    }
-
-    // company
-    public static function getCompany()
-    {
-        return static::$companyFormat;
-    }
-
-    public static function getCompanyPrefix()
-    {
-        return static::$companyPrefix;
-    }
-
-    public static function getIndustry()
-    {
-        return static::$industries;
-    }
-
-    public static function getBank()
-    {
-        return static::$banks;
-    }
-
-    // address
-    public static function getCountry()
-    {
-        return static::$countries;
-    }
-
-    public static function getPrefecture()
-    {
-        return static::$prefectures;
-    }
-
-    // color
-    public static function getColor()
-    {
-        return static::$colors;
-    }
-
     public static $userNameFormats = [
         '{{lastNameAscii}} {{firstNameAscii}}',
         '{{firstNameAscii}} {{lastNameAscii}}',
@@ -212,7 +146,7 @@ class JapaneseData
         'ヤマギシ', 'ヤマグチ', 'ヤマダ', 'ヤマモト', 'ヨシダ', 'ヨシモト',
         'ワカマツ', 'ワタナベ',
     ];
-    public static $colors = [
+    public static $color = [
         '赤',
         '朱色',
         '桃色',
@@ -238,7 +172,7 @@ class JapaneseData
         '銀色',
         '金色'];
 
-    public static $countries = [
+    public static $country = [
         'アフガニスタン', 'アルバニア', 'アルジェリア', 'アメリカ領サモア', 'アンドラ', 'アンゴラ', 'アンギラ', '南極大陸', 'アンティグアバーブーダ', 'アルゼンチン', 'アルメニア', 'アルバ', 'オーストラリア', 'オーストリア', 'アゼルバイジャン',
         'バハマ', 'バーレーン', 'バングラデシュ', 'バルバドス', 'ベラルーシ', 'ベルギー', 'ベリーズ', 'ベナン', 'バミューダ島', 'ブータン', 'ボリビア', 'ボスニア・ヘルツェゴビナ', 'ボツワナ', 'ブーベ島', 'ブラジル', 'イギリス領インド洋地域', 'イギリス領ヴァージン諸島', 'ブルネイ', 'ブルガリア', 'ブルキナファソ', 'ブルンジ',
         'カンボジア', 'カメルーン', 'カナダ', 'カーボベルデ', 'ケイマン諸島', '中央アフリカ共和国', 'チャド', 'チリ', '中国', 'クリスマス島', 'ココス諸島', 'コロンビア', 'コモロ', 'コンゴ共和国', 'クック諸島', 'コスタリカ', 'コートジボワール', 'クロアチア', 'キューバ', 'キプロス共和国', 'チェコ共和国',
@@ -265,7 +199,7 @@ class JapaneseData
         'イエメン',
         'ザンビア', 'ジンバブエ'
     ];
-    public static $prefectures = [
+    public static $prefecture = [
         '北海道',
         '青森県', '岩手県', '宮城県', '秋田県', '山形県', '福島県',
         '茨城県', '栃木県', '群馬県', '埼玉県', '千葉県', '東京都', '神奈川県',
@@ -311,7 +245,7 @@ class JapaneseData
      * {@link} https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E9%8A%80%E8%A1%8C%E4%B8%80%E8%A6%A7
      *
      */
-    public static $banks = [
+    public static $bank = [
         'みずほ銀行',
         '三菱銀行',
         '三井住友銀',
@@ -387,7 +321,7 @@ class JapaneseData
     ];
 
     public static $companyPrefix = ['株式会社', '有限会社'];
-    public static $industries = ['飲料', 'たばこ', '銀行',
+    public static $industry = ['飲料', 'たばこ', '銀行',
         '繊維',
         '木材',
         '家具',
@@ -408,7 +342,7 @@ class JapaneseData
         '情報通信機械器具', '理容', '美容', '浴場業',
         '輸送用機械器具'];
 
-    public static $phoneNumbers = [
+    public static $phoneNumber = [
         '080-####-####',
         '090-####-####',
         '0#-####-####',
@@ -422,7 +356,7 @@ class JapaneseData
      * {@link} https://wiki.xn--rckteqa2e.com/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8
      *
      */
-    public static $pokemons = ['フシギダネ',
+    public static $pokemon = ['フシギダネ',
         'フシギソウ',
         'フシギバナ',
         'ヒトカゲ',
@@ -577,7 +511,7 @@ class JapaneseData
     /**
      * {@link} https://dictionary.goo.ne.jp/kanji/
      */
-    public static $kanjis = [
+    public static $kanji = [
         '葵',
         '啓',
         '巣',
@@ -642,7 +576,7 @@ class JapaneseData
     /**
      * {@link} https://dictionary.goo.ne.jp/idiom/
      */
-    public static $idioms = [
+    public static $idiom = [
         '因果応報',
         '森羅万象',
         '空即是色',
@@ -704,7 +638,7 @@ class JapaneseData
         '盛者必衰',
         '七転八起'];
 
-    public static $words = [
+    public static $word = [
         '合う',
         '会う',
         'アウト',

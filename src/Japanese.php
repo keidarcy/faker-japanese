@@ -13,7 +13,7 @@ class Japanese extends Base
      */
     public function color()
     {
-        return static::randomElement(JapaneseData::getColor());
+        return static::randomElement(JapaneseData::$color);
     }
 
     /**
@@ -23,7 +23,8 @@ class Japanese extends Base
      */
     public function company()
     {
-        return $this->generator->parse(static::randomElement(JapaneseData::getCompany()));
+        $format = static::randomElement(JapaneseData::$companyFormat);
+        return $this->generator->parse($format);
     }
 
     /**
@@ -43,7 +44,7 @@ class Japanese extends Base
      */
     public static function companyPrefix()
     {
-        return static::randomElement(JapaneseData::getCompanyPrefix());
+        return static::randomElement(JapaneseData::$companyPrefix);
     }
 
     /**
@@ -53,7 +54,7 @@ class Japanese extends Base
      */
     public static function industry()
     {
-        return static::randomElement(JapaneseData::getIndustry());
+        return static::randomElement(JapaneseData::$industry);
     }
 
     /**
@@ -63,7 +64,8 @@ class Japanese extends Base
      */
     public function phone()
     {
-        return static::numerify($this->generator->parse(static::randomElement(JapaneseData::getPhoneNumber())));
+        $format = static::randomElement(JapaneseData::$phoneNumber);
+        return static::numerify($this->generator->parse($format));
     }
 
     /**
@@ -73,7 +75,7 @@ class Japanese extends Base
      */
     public static function word()
     {
-        return (string) static::randomElement((JapaneseData::getWord()));
+        return static::randomElement((JapaneseData::$word));
     }
 
     /**
@@ -83,7 +85,7 @@ class Japanese extends Base
      */
     public function idiom()
     {
-        return (string) static::randomElement((JapaneseData::getIdiom()));
+        return static::randomElement((JapaneseData::$idiom));
     }
 
     /**
@@ -93,7 +95,7 @@ class Japanese extends Base
      */
     public function kanji()
     {
-        return (string) static::randomElement((JapaneseData::getKanji()));
+        return static::randomElement((JapaneseData::$kanji));
     }
 
     /**
@@ -103,7 +105,7 @@ class Japanese extends Base
      */
     public function pokemon()
     {
-        return (string) static::randomElement((JapaneseData::getPokemon()));
+        return static::randomElement((JapaneseData::$pokemon));
     }
 
     /**
@@ -113,7 +115,7 @@ class Japanese extends Base
      */
     public function bank()
     {
-        return (string) static::randomElement((JapaneseData::getBank()));
+        return static::randomElement((JapaneseData::$bank));
     }
 
     /**
@@ -123,7 +125,7 @@ class Japanese extends Base
      */
     public function country()
     {
-        return (string) static::randomElement((JapaneseData::getCountry()));
+        return static::randomElement((JapaneseData::$country));
     }
 
     /**
@@ -133,7 +135,7 @@ class Japanese extends Base
       */
     public function prefecture()
     {
-        return (string) static::randomElement((JapaneseData::getPrefecture()));
+        return static::randomElement((JapaneseData::$prefecture));
     }
 
     /**
